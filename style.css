@@ -1,0 +1,363 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+/* Menu Header Conteiner */
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: white;
+  height: 100px;
+}
+
+nav {
+  padding: 0 25px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* Logo Menu */
+#logo {
+  font-weight: bold;
+  font-style: italic;
+  color: #d6000d;
+  text-decoration: none;
+  font-size: 45px;
+}
+/* Menu Links */
+.menu {
+  flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 25px;
+}
+/* Botão Login */
+#login {
+  font-weight: 400;
+  padding: 10px 45px;
+  border-radius: 10px;
+  color: white;
+  background-color: #d6000d;
+}
+
+/* Orçamento */
+
+.orcamento {
+  gap: 120px;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+}
+/* Img */
+.orcamento__imagem {
+  max-width: 300px;
+}
+/* Textos */
+
+/* Tag P de Orçamento */
+.orcamento__text p {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+/* Tag h2 de Orçamento */
+
+.orcamento__text h2 {
+  padding: 5px 0px 0px 0px;
+  color: #d6000d;
+  font-size: 43px;
+}
+/* Tag "a" de Orçamento */
+
+.orcamento__text a {
+  display: inline-block;
+  margin: 25px 0px 0px 0px;
+  color: white;
+  text-decoration: none;
+  background-color: #d6000d;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 8px 35px;
+}
+
+/* serviços */
+
+.servicos {
+  margin: 15% auto 20px auto;
+  max-width: 960px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 15% 0px 15%;
+}
+/* Atributos Texto Servicos */
+.servicos__text ul {
+  list-style: none;
+}
+.servicos__text li {
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding: 5px 0px;
+}
+.servicos__text li img {
+  padding: 0px 15px 0px 0px;
+  order: -1;
+}
+/* Atributos Imagem Servicos */
+.servicos__img {
+  max-width: 300px;
+}
+
+/* Contato */
+
+.contato {
+  padding: 0px 0px 0px 15%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.contato p {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.contato input {
+  margin: 5px 5px 0px 0px;
+  font-size: 1em;
+  font-weight: 400;
+  background-color: red;
+  border-style: none;
+  border-radius: 7px;
+  padding: 12px 38px;
+}
+#submit {
+  cursor: pointer;
+  color: white;
+}
+#celular {
+  background-color: #4b494934;
+  padding: 12px 10px;
+}
+
+#celular::placeholder {
+  padding: 0px 5px 0px 0px;
+  font-weight: 500;
+}
+
+/* Clientes */
+
+.clientes {
+  justify-content: center;
+  gap: 2.5%;
+  max-width: 960px;
+  margin: 10% auto 4% auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.clientes span {
+  border-radius: 50%;
+  margin: 0px 15px 0px 0px;
+  width: 45px;
+  display: inline-block;
+  height: 45px;
+  background-color: #d6000d;
+}
+.clientes__conteiner {
+  display: flex;
+  padding: 12px;
+  max-width: 400px;
+  border-radius: 7px;
+  margin: 0px 0px 10px 0px;
+  background-color: #4b494949;
+}
+
+.clientes__conteiner p {
+  padding: 0px 0px 8px 0px;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+/* Footer(rodapé) */
+
+footer {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  height: 100%;
+  padding: 2% 0px 0px 0px;
+  align-items: baseline;
+  background-color: black;
+  color: white;
+}
+
+footer h2 {
+  padding: 0px 0px 15px 0px;
+}
+.footer__h1 h2 {
+  font-style: italic;
+  font-size: 40px;
+}
+footer p {
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+.footer__contato ul {
+  list-style: none;
+}
+.footer__contato ul li {
+  padding: 0px 0px 12px 0px;
+}
+
+.redes {
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  display: flex;
+}
+.footer__continer__sobre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+/* Media  */
+
+@media (max-width: 800px) {
+  #login {
+    display: none;
+  }
+  .orcamento__text {
+    text-align: center;
+  }
+  .orcamento__text a {
+    padding: 12px 35px;
+  }
+  .servicos {
+    justify-content: center;
+    margin: 25% 0px 0px 0px;
+  }
+  .servicos__img {
+    order: -1;
+    padding: 0px 0px 35px 0px;
+  }
+  .servicos__text li {
+    padding: 0px 0px 20px 0px;
+  }
+  .contato {
+    padding: 15px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .clientes {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  footer {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+  .redes {
+  }
+  .redes a {
+    padding: 5px;
+  }
+  .redes img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  #login {
+    display: none;
+  }
+  nav {
+    padding: 2px;
+    justify-content: center;
+  }
+  .menu {
+    padding-top: 10px;
+    justify-content: center;
+  }
+
+  .orcamento__text {
+    text-align: center;
+  }
+  .orcamento__text a {
+    padding: 12px 35px;
+  }
+  .servicos {
+    margin: 25% 0px 0px 0px;
+  }
+  .servicos__img {
+    order: -1;
+    padding: 0px 0px 35px 0px;
+  }
+  .servicos__text li {
+    padding: 0px 0px 20px 0px;
+  }
+  .contato {
+    padding: 15px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #celular {
+    margin: 8px;
+  }
+  .clientes {
+    padding: 10px 10px 0px 10px;
+  }
+  .clientes__conteiner {
+    margin-bottom: 20px;
+  }
+  footer {
+    height: 100%;
+    justify-content: center;
+  }
+  .footer__continer__sobre {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .redes {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+  }
+  .redes a {
+    padding: 5px;
+  }
+  .redes img {
+    width: 30px;
+  }
+}
